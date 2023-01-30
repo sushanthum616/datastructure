@@ -13,8 +13,7 @@ int main(void) {
     scanf("%d", &A[i]);
 
   for (i = 0; i < n - 1; i++) { // for n number of size, passes will be (n - 1)
-    for (j = 0; j < n - 1 - i;
-         j++) { // (n-1) is for no. of comp. and (-i ) bec. for every pass one
+    for (j = 0; j < n - 1 - i;j++) { // (n-1) is for no. of comp. and (-i ) bec. for every pass one
                 // comp. should red.
       if (A[j] > A[j + 1]) { // condition for swap and comparision
         swap = A[j];
@@ -75,9 +74,7 @@ int main(void) {
   int n, pieces;
   printf("Enter how many cuts you want:");
   scanf("%d", &n); // input from user
-  pieces =
-      2 *
-      n; // 1 cut=2 pieces,2 cut=4 pieces, then for n cut the pieces will be 2n.
+  pieces = 2 * n; // 1 cut=2 pieces,2 cut=4 pieces, then for n cut the pieces will be 2n.
   printf("the pieces will b: %d\n", pieces);
   return 0;
 }
