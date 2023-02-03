@@ -73,8 +73,8 @@ int main(void) {
 int main(void) {
   int n, pieces;
   printf("Enter how many cuts you want:");
-  scanf("%d", &n); // input from user
-  pieces = 2 * n; // 1 cut=2 pieces,2 cut=4 pieces, then for n cut the pieces will be 2n.
+  scanf("%d", &n); 
+  pieces = (n*n + n + 2) / 2; 
   printf("the pieces will b: %d\n", pieces);
   return 0;
 }
